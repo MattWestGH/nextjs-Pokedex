@@ -49,7 +49,6 @@ function App() {
       })
       .then((json) => {
         setIsLoading(false);
-        console.log(json["results"]);
         setPokemonList([...pokemonList, ...json["results"]]);
       });
   }, [offset]);
